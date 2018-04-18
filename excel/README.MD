@@ -2,6 +2,11 @@
 
 ### 用法
 
+```
+  安装依赖 npm install xlsx --save
+  复制excel/index.js到项目然后引用
+```
+
 ```html
 <template>
   <div>

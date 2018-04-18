@@ -86,11 +86,16 @@ class ExcelTool{
   }
 
 
-  exportExcel (name, rs) {
+  exportExcel (name, title, rs) {
     let data = [{}]
-    for (let k in rs[0]) {
-      data[0][k] = k
+    let index = 0
+    let row = rs[0]
+
+    for(var i in row){
+      data[0][i] = title[index]
+      index++
     }
+
     data = data.concat(rs)
     this.downloadExl(data, name)
   }

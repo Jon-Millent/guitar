@@ -6,7 +6,7 @@
 <template>
   <div>
     <a id="downlink"></a>
-    <el-button class="button" @click="output('some', title, excelData)">导出</el-button>
+    <button class="button" @click="output('some', title, excelData)">导出</button>
   </div>
 </template>
 ```

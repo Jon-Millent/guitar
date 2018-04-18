@@ -17,7 +17,7 @@
 ```
 
 ```js
-  import ExcelTool from 'excel'
+  import ExcelTool from './excel/index'
   
   
   export default {

@@ -6,7 +6,7 @@
 <template>
   <div>
     <a id="downlink"></a>
-    <el-button class="button" @click="output('some', excelData)">导出</el-button>
+    <el-button class="button" @click="output('some', title, excelData)">导出</el-button>
   </div>
 </template>
 ```
@@ -28,7 +28,8 @@
             name: '麻辣小龙虾', size: '大', taste: '麻辣', price: '138', remain: '200'
           }
         ],
-        excelTool: null
+        excelTool: null,
+        title: ['菜名', '份量', '辣度', '价格', 'some']
       }
     },
     mounted () {
@@ -36,8 +37,8 @@
       this.excelTool = new ExcelTool(this.outFile)
     },
     methods: {
-      output(name, data){
-        this.excelTool.exportExcel(name, data) // 文件名字，数据
+      output(name, title, data){
+        this.excelTool.exportExcel(name, title, data) // 文件名字， 行标题，数据
       }
     }
   }

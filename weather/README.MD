@@ -1,6 +1,6 @@
 # 获取天气接口
 
-## `get` https://www.baidu.com/home/other/data/weatherInfo?city=上海
+#### `get` https://www.baidu.com/home/other/data/weatherInfo?city=上海
 * city : 城市中文名字，不传就是自动获取
 
 ```json

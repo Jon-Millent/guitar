@@ -1,9 +1,7 @@
 
 
 const updateTime = 1000 / 60
-const rAF = (cb) => {
-  setTimeout(cb, updateTime)
-}
+const rAF = window.requestAnimationFrame || function(cb) { setTimeout(cb, updateTime) }
 var pow = Math.pow,
   
   sqrt = Math.sqrt,
